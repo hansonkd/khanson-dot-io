@@ -1,0 +1,10 @@
+{
+  "name": "khanson-dot-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kyle Hanson's personal website, deployed with GitHub Pages.",
+  "scripts": {
+    "dev": "python3 -m http.server 4321 --bind 127.0.0.1 --directory site",
+    "check": "python3 scripts/check.py"
+  }
+}
