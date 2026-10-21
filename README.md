@@ -16,7 +16,12 @@ Follow the [editorial style guide](docs/editorial-style.md) when editing copy.
 
 ## Domain setup
 
-The domain currently uses Namecheap BasicDNS and URL forwarding. In Namecheap's **Advanced DNS** for `khanson.io`, replace the apex (`@`) URL Redirect record with these four records:
+The domain is registered at Namecheap. Cloudflare's free plan is configured to manage DNS, while GitHub Pages hosts the site. Namecheap's **Custom DNS** setting contains these assigned nameservers:
+
+- `adele.ns.cloudflare.com`
+- `melnicoff.ns.cloudflare.com`
+
+Cloudflare contains the following website records:
 
 | Type | Host | Value |
 | --- | --- | --- |
@@ -26,9 +31,11 @@ The domain currently uses Namecheap BasicDNS and URL forwarding. In Namecheap's 
 | A | @ | 185.199.111.153 |
 | CNAME | www | hansonkd.github.io |
 
-Use Automatic TTL. Preserve mail-related MX/TXT records. Once GitHub's DNS check passes and the certificate is ready, enable **Enforce HTTPS** in Pages settings. DNS changes and certificate provisioning can take up to 24 hours.
+All five website records use Automatic TTL and **DNS only**. The five existing Google mail MX records and the Google verification TXT record were imported and verified against Namecheap's records.
 
-Reference: [GitHub's custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+The nameserver change was saved on October 21, 2026. Cloudflare is waiting for the registrar change to propagate. Once GitHub's DNS check passes and its certificate is ready, enable **Enforce HTTPS** in Pages settings. Do not enable Cloudflare's proxy while certificate provisioning is pending. DNS changes and certificate provisioning can take up to 24 hours.
+
+References: [GitHub custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Cloudflare nameserver setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/).
 
 ## Assets & content
 
