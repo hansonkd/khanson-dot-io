@@ -39,8 +39,20 @@ References: [GitHub custom domains](https://docs.github.com/en/pages/configuring
 
 ## Assets & content
 
-- Career dates and roles, consumer product work, trust company formation, and regulatory work supplied by Kyle Hanson; current CTO title confirmed by the [GetDynasty team page](https://www.getdynasty.com/team/).
+- Career dates and roles supplied by Kyle Hanson; current CTO title confirmed by the [GetDynasty team page](https://www.getdynasty.com/team/).
+- Technical and operating contributions supplied by Kyle on October 27, 2026: Carta data-model refactors to support products, reconciliation to catch cap-table drift and potential errors, ACH payment reconciliation with a direct bank connection, and management of technical-debt risk; Docker sandboxes for automated grading of client assessments at Hired; and consumer product development, trust administration software, design and implementation of a custom CRM to centralize client communications, trust company formation, compliance, and regulatory work at GetDynasty.
 - Portrait: [Kyle's GetDynasty team photo](https://www.getdynasty.com/images/team/kyle-hanson.jpg), stored locally.
 - DM Sans and Instrument Serif are distributed under the SIL Open Font License. License files are included in `site/assets/fonts/`.
+
+### Public technical sources
+
+Reviewed Kyle’s [public GitHub profile](https://github.com/hansonkd) and repository documentation on October 27, 2026. The following sources support the open-source project descriptions. Company-specific contributions come from Kyle’s account; the repositories do not establish which technologies those companies used.
+
+| Project | Source | Details used on the site |
+| --- | --- | --- |
+| Puff | [README](https://github.com/hansonkd/puff/blob/master/readme.md), [Cargo manifest](https://github.com/hansonkd/puff/blob/master/Cargo.toml) | Python and Rust runtime with PostgreSQL, Redis, GraphQL, and background tasks. The manifest names Kyle as the author. |
+| Tino | [README](https://github.com/hansonkd/Tino/blob/master/README.md) | Python remote function calls over the Redis wire protocol with MessagePack. This uses the protocol, not necessarily a Redis server. |
+| BundleDB | [README](https://github.com/hansonkd/bundledb/blob/master/readme.md) | Experimental embedded database in Go. The README identifies it as pre-alpha and not used in production. |
+| Skyline | [README](https://github.com/hansonkd/skyline/blob/master/README.md) | MQTT message broker in Elixir. The README describes an early implementation with missing protocol features. |
 
 This repository publishes only the public website; do not add credentials or private material to `site/`.

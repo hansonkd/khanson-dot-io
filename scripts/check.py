@@ -52,6 +52,6 @@ for stylesheet in (ROOT / "assets").glob("*.css"):
 for data in re.findall(r'<script type="application/ld\+json">(.*?)</script>', page, re.S):
     json.loads(data)
 ET.parse(ROOT / "sitemap.xml")
-assert (ROOT / "CNAME").read_text().strip() == "khanson.io"
+assert (ROOT / "CNAME").read_text().strip() == "www.khanson.io"
 assert (ROOT / ".nojekyll").is_file()
 print(f"Site checks passed: {len(parser.links)} links, fonts, structured data, sitemap, and domain.")

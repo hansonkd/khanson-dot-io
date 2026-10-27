@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khanson.io/sitemap.xml
+Sitemap: https://www.khanson.io/sitemap.xml
