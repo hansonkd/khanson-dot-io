@@ -12,7 +12,7 @@ Follow the [editorial style guide](docs/editorial-style.md) when editing copy.
 
 ## GitHub Pages
 
-`.github/workflows/deploy.yml` validates and publishes only `site/` on every push to `main`. It can also be run manually. Set **Settings → Pages → Source** to **GitHub Actions** and set the custom domain to **khanson.io**. A custom domain must be set in Pages settings (or via the API); the `CNAME` file alone does not configure it for Actions deployments.
+`.github/workflows/deploy.yml` validates and publishes only `site/` on every push to `main`. It can also be run manually. Set **Settings → Pages → Source** to **GitHub Actions** and set the custom domain to **www.khanson.io**. A custom domain must be set in Pages settings (or via the API); the `CNAME` file alone does not configure it for Actions deployments.
 
 ## Domain setup
 
